@@ -1,6 +1,8 @@
 print("Day 1")
 the_file = open("um-deliveries-20140519.txt")
+#This is assigning the variable "the_file" to open the delivery file 
 for line in the_file:
+#This is saying for a line in "um-deliveries-20"
     line = line.rstrip()
     words = line.split('|')
 
