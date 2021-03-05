@@ -11,19 +11,19 @@ def melon_counting(day_number, path):
 #delivery_log becomes a variable that is binded to an open function which will open "um-deliveries-20"
     for line in delivery_log:
 #So this is saying for each line in delivery_log which is the um-deliveries-20 file
-    line = line.rstrip()
-    words = line.split('|')
+        line = line.rstrip()
+        words = line.split('|')
 #What .rstrip() is saying is that for each line to delete any characters at the end of a string 
 #What .split is saying to split a string into a list separated by "|" 
 #This is will make each word separated by "|". 
 
-    melon = words[0]
-    count = words[1]
-    amount = words[2]
+        melon = words[0]
+        count = words[1]
+        amount = words[2]
 #So what the original problem was that printing the melon name over and over
 #So what we just changed is so the program will print the count then the melon name then the total amount sold
 
-    print(f"Delivered {count} {melon}s for total of ${amount}")
+        print(f"Delivered {count} {melon}s for total of ${amount}")
 #Changed the format to an f.string so it would look cleaner
     delivery_log.close()
 melon_count(1, "um-deliveries-20140519.txt")
