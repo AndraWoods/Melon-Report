@@ -24,34 +24,13 @@ def melon_counting(day_number, path)
 #So what we just changed is so the program will print the count then the melon name then the total amount sold
 
     print(f"Delivered {count} {melon}s for total of ${amount}")
-the_file.close()
+#Changed the format to an f.string so it would look cleaner
+    delivery_log.close()
+melon_count(1, "um-deliveries-20140519.txt")
+melon_count(2, "um-deliveries-20140520.txt")
+melon_count(3, "um-deliveries-20140521.txt")
+#So we did delivery_log.close to close the file once it printed the amount
+#We put the melon_count in the outer scope to define the parameters in the function
+#So bascially we were like "rememeber when we put day_number and path above?.. Yeah these are the actual values we are inserting into them"
+#And we delete the rest! 
 
-
-print("Day 2")
-the_file = open("um-deliveries-20140520.txt")
-for line in the_file:
-    line = line.rstrip()
-    words = line.split('|')
-
-    melon = words[0]
-    count = words[0]
-    amount = words[0]
-
-    print("Delivered {} {}s for total of ${}".format(
-        count, melon, amount))
-the_file.close()
-
-
-print("Day 3")
-the_file = open("um-deliveries-20140521.txt")
-for line in the_file:
-    line = line.rstrip()
-    words = line.split('|')
-
-    melon = words[0]
-    count = words[0]
-    amount = words[0]
-
-    print("Delivered {} {}s for total of ${}".format(
-        count, melon, amount))
-the_file.close()
