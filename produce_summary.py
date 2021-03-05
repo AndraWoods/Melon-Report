@@ -18,8 +18,10 @@ def melon_counting(day_number, path)
 #This is will make each word separated by "|". 
 
     melon = words[0]
-    count = words[0]
-    amount = words[0]
+    count = words[1]
+    amount = words[2]
+#So what the original problem was that printing the melon name over and over
+#So what we just changed is so the program will print the melon name then the count sold then the total amount sold
 
     print("Delivered {} {}s for total of ${}".format(
         count, melon, amount))
