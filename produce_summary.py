@@ -1,8 +1,13 @@
-print("Day 1")
-the_file = open("um-deliveries-20140519.txt")
 #This is assigning the variable "the_file" to open the delivery file 
-for line in the_file:
-#This is saying for a line in "um-deliveries-20"
+#This is saying for a line in "um-deliveries-20" but we want to make this more efficient
+#We want to put this code into a function
+    
+def melon_counting(day_number, path)
+#Here we made a function named "melon_orders" and set parameters called "day_number " and "path"
+#What this does is that it calls two different functions that we will loop around to near the end.
+    print("Day", day_number)
+    the_file = open("um-deliveries-20140519.txt")
+    for line in the_file:
     line = line.rstrip()
     words = line.split('|')
 
