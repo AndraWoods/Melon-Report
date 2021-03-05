@@ -7,12 +7,15 @@ def melon_counting(day_number, path)
 #What this does is that it calls two different functions that we will loop around to near the end.
     print("Day", day_number)
     delivery_log = open(path)
-#What this says is that when the program is ran that it will print the day and the number of the day 
+#What this says is that when the program is ran, it will print the day and the number of the day 
 #delivery_log becomes a variable that is binded to an open function which will open "um-deliveries-20"
-    the_file = open("um-deliveries-20140519.txt")
-    for line in the_file:
+    for line in delivery_log:
+#So this is saying for each line in delivery_log which is the um-deliveries-20 file
     line = line.rstrip()
     words = line.split('|')
+#What .rstrip() is saying is that for each line to delete any characters at the end of a string 
+#What .split is saying to split a string into a list separated by "|" 
+#This is will make each word separated by "|". 
 
     melon = words[0]
     count = words[0]
