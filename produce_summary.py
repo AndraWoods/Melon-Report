@@ -6,6 +6,9 @@ def melon_counting(day_number, path)
 #Here we made a function named "melon_orders" and set parameters called "day_number " and "path"
 #What this does is that it calls two different functions that we will loop around to near the end.
     print("Day", day_number)
+    delivery_log = open(path)
+#What this says is that when the program is ran that it will print the day and the number of the day 
+#delivery_log becomes a variable that is binded to an open function which will open "um-deliveries-20"
     the_file = open("um-deliveries-20140519.txt")
     for line in the_file:
     line = line.rstrip()
