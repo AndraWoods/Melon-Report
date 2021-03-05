@@ -21,10 +21,9 @@ def melon_counting(day_number, path)
     count = words[1]
     amount = words[2]
 #So what the original problem was that printing the melon name over and over
-#So what we just changed is so the program will print the melon name then the count sold then the total amount sold
+#So what we just changed is so the program will print the count then the melon name then the total amount sold
 
-    print("Delivered {} {}s for total of ${}".format(
-        count, melon, amount))
+    print(f"Delivered {count} {melon}s for total of ${amount}")
 the_file.close()
 
 
